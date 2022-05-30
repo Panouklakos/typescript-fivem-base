@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "types/*",
+                "@citizenfx/client/*"
+            ]
+        },
+        "outDir": "./",
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "es6",
+        "allowJs": true,
+        "lib": [
+            "es2017"
+        ],
+        "types": [
+            "@citizenfx/client",
+            "@citizenfx/server",
+        ],
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "./src/**/*",
+        "@citizenfx/client/*.d.ts",
+        "@citizenfx/server/*.d.ts"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/__tests__/*"
+    ]
+}
